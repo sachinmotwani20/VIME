@@ -63,11 +63,11 @@ def vime_semi(x_train, y_train, x_unlab, x_test, parameters,
 
   # Input placeholder
   # Labeled data
-  x_input = tf.placeholder(tf.float32, [None, data_dim])
-  y_input = tf.placeholder(tf.float32, [None, label_dim])
+  x_input = tf.compat.v1.placeholder(tf.float32, [None, data_dim])
+  y_input = tf.compat.v1.placeholder(tf.float32, [None, label_dim])
   
   # Augmented unlabeled data
-  xu_input = tf.placeholder(tf.float32, [None, None, data_dim])
+  xu_input = tf.compat.v1.placeholder(tf.float32, [None, None, data_dim])
   
   ## Predictor
   def predictor(x_input):
