@@ -17,7 +17,7 @@ vime_semi.py
 import keras
 import numpy as np
 import tensorflow as tf
-from tensorflow.contrib import layers as contrib_layers
+from tensorflow.keras import layers as contrib_layers
 
 from vime_utils import mask_generator, pretext_generator
 
